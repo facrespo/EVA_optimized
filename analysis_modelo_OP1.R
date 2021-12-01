@@ -77,7 +77,7 @@ plot(archivo$assets,archivo$POPT,main="Valor assets versus Patrimonio Optimo");
 
 plot(archivo$LEVEST,archivo$assets,main="Valor assets versus Patrimonio Optimo");
 
-plot(archivo$EVAtotal,archivo$EVA_OPT,main="EVA real versus EVA Optimo");
+plot(archivo$EVAtotal,archivo$EVA_OPT,main="EVA real versus EVA Optimized", xlab="EVA real", ylab="EVA OPtimized");
 lines(c(-4e+07,8e+07),c(-4e+07,8e+07))
 
 archivo2<-archivo[archivo$LEVEST<=0.1,];
